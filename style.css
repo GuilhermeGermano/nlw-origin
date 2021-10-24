@@ -9,11 +9,6 @@ html,body {
   font-family: 'Roboto', sans-serif;
   height: 100%;
   -webkit-font-smoothing:antialiased;
-  background-size: cover;
-  background: linear-gradient(to top, rgba(7, 7, 75, 0.945) 60%, black);
-  
- 
-
 }
 
 
@@ -94,4 +89,41 @@ ul {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.selo.is-animating {
+  animation: loading 15s linear infinite;
+}
+
+
+
+@media(min-width: 800px ) {
+   main{
+     background: url('img/desktop.svg') no-repeat center/cover;
+   }
+
+   .container{
+     text-align: center;
+     
+   }
+
+   .avatar > img{
+    width: 9rem;
+    height: 9.5rem;
+    margin-top: 20px;
+   }
+
+   .avatar > span{
+     margin-top: 15px;
+   }
 }
