@@ -2,7 +2,7 @@
 const linksSocialMedia = {
   github : "ggermano7",
   linkedin : "in/guilhermegermano27",
-  facebook : "guilherme.germano.351",
+  //facebook : "guilherme.germano.351",
   instagram : "ggermano_c",
   twitter : "ggermano27"
 }
